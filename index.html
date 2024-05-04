@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Clone UI</title>
+    <link rel="icon" type="image/x-icon" href="./Images/fevicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+
+
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+
+            <div class="nav-logo border">
+                <div class="logo"></div>
+            </div>
+
+            <div class="nav-address border">
+                <p class="add-first">Deliver to</p>
+                <div class="add-icon">
+                    <i class="fa-solid fa-location-dot icon"> </i>
+                    <p class="add-second">India </p>
+                </div>
+            </div>
+
+            <div class="nav-search">
+                <select class="nav-select">
+                    <option value="all">All</option>
+                </select>
+                <input type="search" class="search-input" placeholder="Search Amazon">
+                <div class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+            <div class="nav-flag border">
+                <div class="flag"></div>
+                <p class="ind">IND</p>
+                <select class="country-list">
+
+                </select>
+            </div>
+
+            <div class="nav-signin border">
+                <p><span>Hello, sign in</span></p>
+                <p class="nav-second">Account & Lists
+                    <span>
+                        <select class="account-list"></select>
+                    </span>
+                </p>
+
+            </div>
+
+            <div class="nav-return border">
+                <p><span>Returns</span></p>
+                <p class="nav-second">& Orders</p>
+
+            </div>
+
+            <div class="nav-cart border">
+                <i class="fa-solid fa-cart-shopping"></i>
+                Cart
+
+            </div>
+        </div>
+        <div class="panel">
+            <div class="all-panel border">
+                <i class="fa-solid fa-bars"></i>
+                All
+
+            </div>
+            <div class="panel-opts">
+                <p class="border">Today's Deals</p>
+                <p class="border">Customer Service</p>
+                <p class="border">Registry</p>
+                <p class="border">Gift Cards</p>
+                <p class="border">Sell</p>
+
+            </div>
+            <div class="panel-right border">
+                Shop Deals on Electronics
+
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section Carosal -->
+    <div class="hero-section-slider">
+
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+            <img src="./Images/hero_image.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="./Images/hero_image2.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="./Images/hero_image3.jpg" style="width:100%">
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)"><i class="fa-solid fa-chevron-left"></i></a>
+        <a class="next" onclick="plusSlides(1)"><i class="fa-solid fa-chevron-right"></i></a>
+        <div class="hero-message">
+            <p>You are on amazon.com. You can also shop on Amazon India for millions of products with fast local
+                delivery. <a href="">Click here to go to amazon.in</a></p>
+        </div>
+
+    </div>
+    <!-- Shop Section  -->
+    <div class="shop-section">
+        <div class="card">
+            <p>Deal in PCs</p>
+            <div class="card-image img1"></div>
+            <a href="">Show now</a>
+
+        </div>
+        <div class="card">
+            <p>Deal in Healthcare </p>
+            <div class="card-image img2"></div>
+            <a href="">Show now</a>
+
+        </div>
+        <div class="card">
+            <p>Deal in Furniture</p>
+            <div class="card-image img3"></div>
+            <a href="">Show now</a>
+
+        </div>
+        <div class="card">
+            <p>Deal in Mobile Phone</p>
+            <div class="card-image img4"></div>
+            <a href="">Show now</a>
+
+        </div>
+        <div class="card">
+            <p>Beauty and Essentials</p>
+            <div class="card-image img1-1"></div>
+            <a href="">Show now</a>
+
+        </div>
+        <div class="card">
+            <p>Pet Care</p>
+            <div class="card-image img2-1"></div>
+            <a href="">Show now</a>
+
+        </div>
+        <div class="card">
+            <p>Kids and Toys</p>
+            <div class="card-image img3-1"></div>
+            <a href="">Show now</a>
+
+        </div>
+        <div class="card">
+            <p>Fashion Accreeories</p>
+            <div class="card-image img4-1"></div>
+            <a href="">Show now</a>
+
+        </div>
+    </div>
+
+    <!-- Sliding Crousal Gallary Section  -->
+    <div class="shop-gallary-wrapper">
+        <a class="prevBtn" id="prevB"><i class="fa-solid fa-chevron-left"></i></a>
+        <a class="nextBtn" id="nextB"><i class="fa-solid fa-chevron-right"></i></a>
+        <div class="shop-gallary">
+            <div>
+                <span><img src="./Images/product1.jpg" alt=""></span>
+                <span><img src="./Images/product2.jpg" alt=""></span>
+                <span><img src="./Images/product3.jpg" style="width: 190px;" alt=""></span>
+                <span><img src="./Images/product4.jpg" style="width: 150px;" alt=""></span>
+                <span><img src="./Images/product5.jpg" style="width: 260px;" alt=""></span>
+                <span><img src="./Images/product6.jpg" style="width: 190px;" alt=""></span>
+
+
+
+            </div>
+            <div>
+                <span><img src="./Images/product1.jpg" alt=""></span>
+                <span><img src="./Images/product2.jpg" alt=""></span>
+                <span><img src="./Images/product3.jpg" style="width: 190px;" alt=""></span>
+                <span><img src="./Images/product4.jpg" style="width: 150px;" alt=""></span>
+                <span><img src="./Images/product5.jpg" style="width: 260px;" alt=""></span>
+                <span><img src="./Images/product6.jpg" style="width: 190px;" alt=""></span>
+
+
+            </div>
+
+
+
+        </div>
+
+
+
+
+
+    </div>
+
+    <!-- Cards Section  -->
+    <div class="shop-section" style="margin-top: 290px;">
+        <div class="card">
+            <p>Deal in PCs</p>
+            <div class="card-image img1"></div>
+            <a href="">Show now</a>
+
+        </div>
+        <div class="card">
+            <p>Deal in Healthcare </p>
+            <div class="card-image img2"></div>
+            <a href="">Show now</a>
+
+        </div>
+        <div class="card">
+            <p>Deal in Furniture</p>
+            <div class="card-image img3"></div>
+            <a href="">Show now</a>
+
+        </div>
+        <div class="card">
+            <p>Deal in Mobile Phone</p>
+            <div class="card-image img4"></div>
+            <a href="">Show now</a>
+
+        </div>
+        <div class="card">
+            <p>Beauty and Essentials</p>
+            <div class="card-image img1-1"></div>
+            <a href="">Show now</a>
+
+        </div>
+        <div class="card">
+            <p>Pet Care</p>
+            <div class="card-image img2-1"></div>
+            <a href="">Show now</a>
+
+        </div>
+        <div class="card">
+            <p>Kids and Toys</p>
+            <div class="card-image img3-1"></div>
+            <a href="">Show now</a>
+
+        </div>
+        <div class="card">
+            <p>Fashion Accreeories</p>
+            <div class="card-image img4-1"></div>
+            <a href="">Show now</a>
+
+        </div>
+    </div>
+
+    <!-- Sign In Footer -->
+    <div class="sign-in-footer">
+        <br>
+        <hr class="hr-end">
+        <p>See personalized recommendations</p>
+        <div class="sign-botton">
+            <a href="" class="sign-in">Sign in</a>
+
+        </div>
+
+        <p style="font-size: 0.75rem;">New customer? <span>Start here. </span></p>
+
+        <hr style="margin-top: 30px; margin-bottom: 5px;">
+
+
+    </div>
+
+    <!-- Back to Top -->
+    <div class="back-top">
+        <a href="">Back to Top</a>
+    </div>
+
+    <footer>
+        <div class="footer-section">
+
+            <div class="col-first">
+
+                <ul>
+                    <p class="heading-p">Get to Know Us</p>
+                    <a>Careers</a>
+                    <a>Blog</a>
+                    <a>About Amazon</a>
+                    <a>Investor Relations</a>
+                    <a>Amazon Devices</a>
+                    <a>Amazon Science</a>
+                </ul>
+                <ul>
+                    <p class="heading-p">Make Money with Us</p>
+                    <a>Sell products on Amazon</a>
+                    <a>Sell apps on Amazon</a>
+                    <a>Become an Affiliate</a>
+                    <a>Advertise Your Products</a>
+                    <a>Self-Publish with Us</a>
+                    <a>Host an Amazon Hub</a>
+                    <a>> See More Make Money with Us</a>
+                </ul>
+                <ul>
+                    <p class="heading-p">Get to Know Us</p>
+                    <a>Careers</a>
+                    <a>Blog</a>
+                    <a>About Amazon</a>
+                    <a>Investor Relations</a>
+                    <a>Amazon Devices</a>
+                    <a>Amazon Science</a>
+                </ul>
+                <ul>
+                    <p class="heading-p">Make Money with Us</p>
+                    <a>Sell products on Amazon</a>
+                    <a>Sell apps on Amazon</a>
+                    <a>Become an Affiliate</a>
+                    <a>Advertise Your Products</a>
+                    <a>Self-Publish with Us</a>
+                    <a>Host an Amazon Hub</a>
+                    <a>> See More Make Money with Us</a>
+                </ul>
+
+            </div>
+        </div>
+        <div class="footer-bar-foot">
+            <hr style="opacity: 0.2; ">
+            <div class="footer-bar">
+                <div class="footer-logo"></div>
+                <div class="english">
+                    <p style="margin-right: 2px;"><i class="fa-solid fa-globe"></i></p>
+                    <p>English</p>
+                </div>
+                <div class="english" style="width: 190px;">
+                    <p style="margin-right: 10px;">₹</p>
+                    <p style="margin-right: 5px;">INR - </p>
+                    <p>Indian Rupees</p>
+                </div>
+                <div class="english">
+                    <div class="flag-down"></div>
+                    <p>India</p>
+                </div>
+
+
+            </div>
+
+            <hr style="opacity: 0.2; margin-top: 20px;">
+
+        </div>
+        </div>
+
+    </footer>
+
+
+
+
+
+    <script>
+        // Image Carousal
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+    <script>
+        // Sliding Gallary JS
+        let scrollContainer = document.querySelector(".shop-gallary")
+        let backBtn = document.getElementById("prevB");
+        let nextBtn = document.getElementById("nextB");
+
+
+        scrollContainer.addEventListener("wheel", (evt) => {
+            evt.preventDefault();
+            scrollContainer.scrollLeft += evt.deltaY;
+        });
+
+        backBtn.addEventListener("click", () => {
+            scrollContainer.style.scrollBehaviour = "smooth";
+            scrollContainer.scrollLeft -= 600;
+
+        });
+        nextBtn.addEventListener("click", () => {
+            scrollContainer.style.scrollBehaviour = "smooth";
+            scrollContainer.scrollLeft += 600;
+
+        });
+    </script>
+
+</body>
+
+</html>
